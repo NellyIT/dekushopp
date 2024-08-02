@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝓝𝓮𝓵𝓵𝔂 𝓢𝓽𝓸𝓻𝓮</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>𝓝𝓮𝓵𝓵𝔂 𝓢𝓽𝓸𝓻𝓮</h1>
+        <div id="cart">
+            <button onclick="toggleCart()">𝓖𝓲𝓸̉ 𝓗𝓪̀𝓷𝓰(<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+    <main>
+        <div class="product" data-name="Nước Suối 1" data-price="5000">
+            <img src="https://www.starbucks.com.hk/media/catalog/product/p/u/pure_matcha_cream_frappuccino_frap_1.jpg" alt="starbuck matcha">
+            <h2>Starbuck matcha</h2>
+            <p>Giá: 5000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Suốigit 2" data-price="6000">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-p/10/83/c3/b0/photo0jpg.jpg" alt="Bạc xỉu">
+            <h2>Bạc xỉu Starbucks</h2>
+            <p>Giá: 6000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Suối 3" data-price="7000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqf_BvI3bIpKC-nvnVfYMgGy2A5Z4tRIB5yA&s" alt="Caffe ">
+            <h2>Caffe</h2>
+            <p>Giá: 7000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Ngọt 1" data-price="10000">
+            <img src="https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lstrh7nbx8lg5a" alt="Nước suối">
+            <h2>Nước suối</h2>
+            <p>Giá: 10000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Ngọt 2" data-price="11000">
+            <img src="https://nuocsaka.com/wp-content/uploads/2023/04/aquafina-500ml.jpg" alt="Nước Ngọt 2">
+            <h2>Aquafina</h2>
+            <p>Giá: 11000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Trái Cây 1" data-price="15000">
+            <img src="https://comtambason.com/wp-content/uploads/2020/12/Nuoc-suoi.png" alt="Nước suối Dasani">
+            <h2>Nước suối Dasani</h2>
+            <p>Giá: 15000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Nước Trái Cây 2" data-price="16000">
+            <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/mach_ban_6_cach_lam_banh_mi_sandwich_day_du_dinh_duong_1_8756a3e8e2.png" alt="Nước Trái Cây 2">
+            <h2>Sandwich</h2>
+            <p>Giá: 16000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Trà Đào 1" data-price="12000">
+            <img src="https://vinpro.store/wp-content/uploads/2022/07/cach-lam-banh-Hamburger-5.jpg" alt="Trà Đào 1">
+            <h2>Hamburger</h2>
+            <p>Giá: 12000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Trà Đào 2" data-price="13000">
+            <img src="https://static.kfcvietnam.com.vn/images/items/lg/2-Fried-Chicken.jpg?v=gOREl4" alt="Cà Phê Starbucks">
+            <h2>Gà rán</h2>
+            <p>Giá: 13000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-name="Trà Sữa" data-price="20000">
+            <img src="https://dienmaythucpham.com/wp-content/uploads/2022/12/cach-lam-khoai-tay-chien-kfc-min-1.jpg" alt="Trà Sữa">
+            <h2>Khoai tây</h2>
+            <p>Giá: 20000 VND</p>
+            <button onclick="addToCart(this)">Thêm vào giỏ</button>
+        </div>
+    </main>
+    <div id="cart-details" style="display:none;">
+        <h2>Giỏ Hàng</h2>
+        <ul id="cart-items"></ul>
+        <p>Tổng Cộng: <span id="total-price">0</span> VND</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
